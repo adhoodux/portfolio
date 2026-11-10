@@ -81,6 +81,7 @@
   
   .experience {
     color: var(--text);
+    font-size: 14px;
     width: fit-content;
     margin-bottom: 20px;
     background-color: #E7F9FF;
