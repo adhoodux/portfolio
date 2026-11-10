@@ -1,0 +1,213 @@
+
+/* -------------------------
+   1. Global styles
+------------------------- */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text: #32404F;
+    --muted: #87909a;
+    --background: #fafafa;
+    --border: #e8e8e8;
+    --hover: #1d70b8;
+  }
+  
+  body {
+    margin: 0;
+    padding: 48px 6%;
+    background: var(--background);
+    color: var(--text);
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+  }
+  
+  /* -------------------------
+     2. Header
+  ------------------------- */
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 110px;
+  }
+  
+  .logo {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .main-nav a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  
+  /* -------------------------
+     3. Introduction
+  ------------------------- */
+  
+  .intro {
+    max-width: 680px;
+    margin-bottom: 80px;
+  }
+  
+  .intro h1 {
+    margin: 0 0 12px;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  
+  .experience {
+    color: var(--text);
+    width: fit-content;
+    margin-bottom: 20px;
+    background-color: #E7F9FF;
+    padding: 8px 16px;
+  }
+  
+  .skills {
+    max-width: 600px;
+    margin-bottom: 24px;
+  }
+  
+  .current-role {
+    font-weight: 400;
+  }
+  
+  /* -------------------------
+     4. Portfolio navigation
+  ------------------------- */
+  
+  .portfolio-nav {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .portfolio-nav a {
+    padding-bottom: 12px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  
+  .portfolio-nav a.active {
+    color: var(--text);
+    font-weight: 600;
+    border-bottom: 2px solid var(--text);
+  }
+  
+  /* -------------------------
+     5. Project grid
+  ------------------------- */
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .project-card {
+    min-width: 0;
+  }
+  
+  .project-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #eeeeee;
+    margin-bottom: 16px;
+  }
+  
+  .project-card h2 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .project-card p {
+    margin: 0;
+    color: var(--muted);
+  }
+  
+  /* -------------------------
+     6. Footer
+  ------------------------- */
+  
+  footer {
+    margin-top: 120px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+  }
+  
+  /* -------------------------
+     7. Responsive layout
+  ------------------------- */
+  
+  @media (max-width: 768px) {
+  
+    body {
+      padding: 32px 5%;
+    }
+  
+    .site-header {
+      margin-bottom: 75px;
+    }
+  
+    .intro {
+      margin-bottom: 75px;
+    }
+  
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  
+  @media (max-width: 500px) {
+  
+    body {
+      padding: 24px 20px;
+    }
+  
+    .site-header {
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .main-nav {
+      gap: 16px;
+    }
+  
+    .intro h1 {
+      font-size: 26px;
+    }
+  
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  
